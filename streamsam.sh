@@ -27,6 +27,7 @@ ordered=t       Keep reads in input order.  False is faster.
 ref=<file>      Optional reference file.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

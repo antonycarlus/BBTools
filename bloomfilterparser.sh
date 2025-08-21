@@ -17,6 +17,7 @@ in=slurm-3249652.out out=summary.txt
 You get details of calls to increment() if you add the verbose flag.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

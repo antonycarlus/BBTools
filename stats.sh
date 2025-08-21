@@ -68,6 +68,7 @@ gcformat=<0-5>  Select GC output format; default 1.
 	Note that in gcformat 1, A+C+G+T=1 even when N is nonzero.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

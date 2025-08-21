@@ -29,6 +29,7 @@ filetid=f       Name shreds with a tid parsed from the filename (e.g. tid_5).
 headertid=f     Name shreds with a tid parsed from sequence headers.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

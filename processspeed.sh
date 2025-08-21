@@ -10,6 +10,7 @@ Description:  Summarizes results of Linux time command.
 Usage:        processspeed.sh <file>
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

@@ -18,6 +18,7 @@ in=file         Specify the input fasta file(s), or stdin.
 out=stdout      Destination of primary output; may be directed to a file.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

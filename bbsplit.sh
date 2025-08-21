@@ -81,6 +81,7 @@ Java Parameters:
 
 This list is not complete.  For more information, please consult $DIRdocs/readme.txt
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

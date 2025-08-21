@@ -18,6 +18,7 @@ nzo=t        	(nonzeroonly) Do not print empty bins.
 reads=-1     	If nonnegative, stop after this many reads.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

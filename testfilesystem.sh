@@ -13,6 +13,7 @@ Usage:  testfilesystem.sh <in> <out> <log> <size> <ways> <interval in seconds>
 'in' should contain the # symbol if ways>1.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

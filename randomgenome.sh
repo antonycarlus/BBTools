@@ -24,6 +24,7 @@ amino=f         Produce random amino acids instead of nucleotides.
 includestop=f   Include stop codons in random amino sequences.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

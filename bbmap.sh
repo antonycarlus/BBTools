@@ -306,6 +306,7 @@ Java Parameters:
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter 
 any problems, or post at: http://seqanswers.com/forums/showthread.php?t=41057
+For documentation and the latest version, visit: https://bbmap.org
 "   
 }
 

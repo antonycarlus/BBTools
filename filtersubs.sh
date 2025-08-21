@@ -23,6 +23,7 @@ maxclips=-1     If nonnegative, discard reads with more clip operations.
 keepperfect=f   Also keep error-free reads.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

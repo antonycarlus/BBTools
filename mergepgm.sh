@@ -19,6 +19,7 @@ normalize=f     Merge proportionally to base counts, so small models
                 a multiplier applied to that model prior to merging.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

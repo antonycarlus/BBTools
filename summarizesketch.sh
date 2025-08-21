@@ -19,6 +19,7 @@ level=genus     Ignore contaminants with the same taxonomy as the primary hit at
 unique=f        Use the contaminant with the most unique hits rather than highest score.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

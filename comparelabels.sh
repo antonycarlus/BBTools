@@ -53,6 +53,7 @@ contam         Fraction of reads assigned to a different label, using the
                then contam1=ab/(aa+au+ab) = 2/13 = 153846 PPM.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

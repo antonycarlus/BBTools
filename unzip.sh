@@ -20,6 +20,7 @@ out=<file>      Output file for good reads.
 zl=             Set the compression level; 0-9 or 11.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

@@ -12,6 +12,7 @@ It is only retained because there is some situation in which it is needed.
 Usage:  unicode2ascii.sh in=<file> out=<file>
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

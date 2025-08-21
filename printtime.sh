@@ -10,6 +10,7 @@ Description:    Prints time elapsed since last called on the same file.
 Usage:          printtime.sh <filename>
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

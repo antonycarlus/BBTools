@@ -19,6 +19,7 @@ fraction=0.98   Min fraction of bases mapped to ref to be
                 considered 'all mapped'.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

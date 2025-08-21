@@ -28,6 +28,7 @@ Processing parameters:
 None yet!
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

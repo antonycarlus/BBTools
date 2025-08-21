@@ -200,6 +200,7 @@ Java Parameters:
 *****   All additional parameters supported by BBDuk may also be used, and will be passed directly to BBDuk   *****
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

@@ -79,6 +79,7 @@ Note:  The distance metric strongly impacts ccm, gcmult, and strmult.
        Defaults are optimized for abscomp.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

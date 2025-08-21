@@ -31,6 +31,7 @@ parseextra=f    Set this to true if the reads headers have comments
                 delimited by a whitespace.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

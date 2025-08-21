@@ -30,6 +30,7 @@ path=               Set the path to an indexed human genome.
 ***** All BBMap parameters can be used; run bbmap.sh for more details. *****
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

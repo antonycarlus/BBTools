@@ -17,6 +17,7 @@ format=4:   name   length   GC
 Note that in format 1, A+C+G+T=1 even when N is nonzero.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

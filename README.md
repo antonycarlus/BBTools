@@ -1,22 +1,20 @@
-# BBTools - OFFICIAL REPOSITORY
+# BBTools
 
-**⚠️ THIS IS THE OFFICIAL BBTools REPOSITORY maintained by Brian Bushnell ⚠️**
+**Official BBTools repository maintained by Brian Bushnell**
 
-**Not to be confused with unofficial/outdated mirrors. This is the authoritative source.**
-
-**BBTools** is a suite of fast, multithreaded bioinformatics tools designed for analysis of DNA and RNA sequence data. BBTools can handle common sequencing file formats such as fastq, fasta, sam, scarf, fasta+qual, compressed files, and text files containing one sequence per line.
+**BBTools** is a suite of fast, multithreaded bioinformatics tools designed for analysis of DNA and RNA sequence data. BBTools can handle common sequencing and bioinformatics file formats such as fastq, fasta, sam, bam, scarf, fasta+qual, gff, gtf, vcf, and gzip/bgzip/bzip2 compressed files.
 
 ## 🚀 Features
 
 - **High Performance**: Multithreaded, efficient memory usage, and optimized algorithms
-- **Comprehensive Suite**: Over 90 tools for various bioinformatics tasks
-- **Format Flexibility**: Handles multiple file formats and automatic format detection
+- **Comprehensive Suite**: Over 100 tools for various bioinformatics tasks
+- **Format Flexibility**: Handles multiple file formats with automatic format detection and proper support for twin or interleaved files
 - **Platform Independent**: Pure Java implementation runs on any system with Java 8+
-- **Production Ready**: Battle-tested at JGI and used in thousands of publications
+- **Production Ready**: Used in production at JGI, and cited in thousands of publications
 
 ## 📦 Main Components
 
-### Core Tools (Most Popular)
+### Some Core Tools
 - **BBMap**: Short read aligner for DNA and RNA-seq data
 - **BBDuk**: Adapter trimming, quality filtering, and contaminant removal  
 - **BBMerge**: Paired read merging with error correction
@@ -36,8 +34,8 @@
 - **BBTools Assembly Pipeline**: Complete assembly workflow
 
 ### Sketch Tools
-- **SendSketch**: Identify contaminants and organisms
-- **CompareSketch**: Compare sketches for similarity
+- **SendSketch**: Identify organisms rapidly using a remote server
+- **CompareSketch**: Compare organisms or custom databases locally using MinHash
 
 ## 🔧 Installation
 
@@ -49,12 +47,12 @@ tar -xzf BBTools.tar.gz
 cd bbmap
 
 # Test installation
-./bbduk.sh --version
+./bbversion.sh
 ```
 
 ### Requirements
-- Java 8 or higher (Java 14+ recommended)
-- 4GB RAM minimum (more for large datasets)
+- Java 8 or higher (Java 17+ recommended)
+- Bash recommended but not required
 
 ## 📖 Documentation
 
@@ -82,27 +80,27 @@ tadpole.sh in=reads.fq out=corrected.fq mode=correct
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our contributing guidelines (coming soon).
+We welcome contributions! Contact Brian if there is a tool or functionality you want to add.
 
 ## 📄 License
 
-BBTools is free for academic and non-profit use. See `license.txt` for details.
+BBTools is free for unlimited use.
 
 ## 📚 Citation
 
 If you use BBTools in your research, please cite:
 ```
-BBTools: a suite of fast, multithreaded bioinformatics tools designed for 
-analysis of DNA and RNA sequence data. Brian Bushnell.
-Official Repository: https://github.com/bbushnell/BBTools
-SourceForge: https://sourceforge.net/projects/bbmap/
+Bushnell, B. (2014) BBMap: A Fast, Accurate, Splice-Aware Aligner.
+Lawrence Berkeley National Laboratory. LBNL-7065E.
+
+BBTools software package: https://bbmap.org
+GitHub: https://github.com/bbushnell/BBTools
 ```
 
-**Note:** Please use this official repository, not outdated third-party mirrors.
 
 ## 🔗 Links
 
-- **Official Website**: [bbtools.org](https://bbtools.org) (coming soon)
+- **Official Website**: [bbmap.org](https://bbmap.org)
 - **SourceForge**: [sourceforge.net/projects/bbmap](https://sourceforge.net/projects/bbmap/)
 - **Support Forum**: [JGI BBTools Forum](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/)
 
@@ -118,4 +116,4 @@ Current Version: **39.34**
 
 ---
 
-*BBTools is developed at the Joint Genome Institute (JGI) and Lawrence Berkeley National Laboratory (LBNL)*
+*BBTools is developed at the Joint Genome Institute (JGI), part of Lawrence Berkeley National Laboratory (LBNL)*

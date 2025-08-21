@@ -41,6 +41,7 @@ recode=f        Re-encode nucleotide sequences over called genes, leaving
                 non-coding regions unchanged.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

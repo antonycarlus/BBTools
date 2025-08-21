@@ -8,6 +8,7 @@ Last modified February 24, 2025
 Usage: reducecolumns.sh <in> <out> column column column
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

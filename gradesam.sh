@@ -20,6 +20,7 @@ bitset=t        Track read ID's to detect secondary alignments.
                 Necessary for mappers that incorrectly output multiple primary alignments per read.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 

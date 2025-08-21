@@ -27,6 +27,7 @@ threads=        Parallel alignments; default is logical cores.
 simd            Enable SIMD operations; requires AVX-256 and Java 17+.
 
 Please contact Brian Bushnell at bbushnell@lbl.gov if you encounter any problems.
+For documentation and the latest version, visit: https://bbmap.org
 "
 }
 
