@@ -1,4 +1,8 @@
-# BBTools
+# BBTools - OFFICIAL REPOSITORY
+
+**⚠️ THIS IS THE OFFICIAL BBTools REPOSITORY maintained by Brian Bushnell ⚠️**
+
+**Not to be confused with unofficial/outdated mirrors. This is the authoritative source.**
 
 **BBTools** is a suite of fast, multithreaded bioinformatics tools designed for analysis of DNA and RNA sequence data. BBTools can handle common sequencing file formats such as fastq, fasta, sam, scarf, fasta+qual, compressed files, and text files containing one sequence per line.
 
@@ -87,8 +91,11 @@ If you use BBTools in your research, please cite:
 ```
 BBTools: a suite of fast, multithreaded bioinformatics tools designed for 
 analysis of DNA and RNA sequence data. Brian Bushnell.
-Available at: https://github.com/BioInfoTools/BBTools
+Official Repository: https://github.com/bbushnell/BBTools
+SourceForge: https://sourceforge.net/projects/bbmap/
 ```
+
+**Note:** Please use this official repository, not outdated third-party mirrors.
 
 ## 🔗 Links
 
