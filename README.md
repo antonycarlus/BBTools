@@ -16,12 +16,15 @@
 
 ## 📦 Main Components
 
-### Core Tools
+### Core Tools (Most Popular)
 - **BBMap**: Short read aligner for DNA and RNA-seq data
-- **BBDuk**: Adapter trimming, quality filtering, and contaminant removal
+- **BBDuk**: Adapter trimming, quality filtering, and contaminant removal  
 - **BBMerge**: Paired read merging with error correction
 - **BBNorm**: Error correction and normalization
 - **Tadpole**: Fast assembler for small genomes or metagenomes
+- **Clumpify**: Reorder reads to maximize compression and speed up analysis
+- **CallVariants**: Variant calling from aligned reads
+- **BBCMS**: Error correction via conditional median filtering
 
 ### Quality Control
 - **BBDuk**: Quality trimming and adapter removal
