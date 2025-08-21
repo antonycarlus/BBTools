@@ -55,11 +55,18 @@ if [ "$PWD" != "$BBTOOLS_DIR" ]; then
     cd "$BBTOOLS_DIR"
 fi
 
-# Step 1: Check for uncommitted changes
+# Step 1: Check for uncommitted changes and add class files
 # This prevents accidentally deploying incomplete work
 echo "Checking for uncommitted changes..."
+
+# First, force-add class files (they're gitignored)
+echo "Adding compiled class files..."
+git add -f current/*/*.class 2>/dev/null
+git add -f current/*/*/*.class 2>/dev/null
+
+# Now check for all uncommitted changes including class files
 if ! git diff-index --quiet HEAD --; then
-    echo -e "${RED}ERROR: You have uncommitted changes!${NC}"
+    echo -e "${YELLOW}Uncommitted changes found:${NC}"
     echo ""
     git status --short
     echo ""
@@ -108,10 +115,23 @@ else
     VERSION_TO_USE="$CURRENT_VERSION"
 fi
 
-# Step 3: Push to GitHub
-# This is the main deployment - pushes all changes to the official repository
+# Step 3: Add class files and push to GitHub
+# This is the main deployment - pushes all changes INCLUDING compiled class files
 echo ""
-echo -e "${YELLOW}Pushing to GitHub...${NC}"
+echo -e "${YELLOW}Adding class files and pushing to GitHub...${NC}"
+
+# Add all regular files
+git add -A
+
+# Explicitly add class files (in case gitignore excludes them)
+echo "Adding compiled class files..."
+git add -f current/*/*.class 2>/dev/null || true
+git add -f current/*/*/*.class 2>/dev/null || true
+
+# Commit if there are changes
+git commit -m "Include compiled class files" 2>/dev/null || true
+
+# Push to GitHub
 git push origin master
 
 if [ $? -eq 0 ]; then
