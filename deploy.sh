@@ -28,9 +28,18 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Configuration paths
-BBTOOLS_DIR="/c/releases/bbmap"
-WEBSITE_DIR="/c/playground/Chloe/bbmap_website"
-GH_CLI="/c/Program Files/GitHub CLI/gh.exe"
+# Detect if running in WSL or Windows Git Bash
+if [ -d "/mnt/c" ]; then
+    # WSL paths
+    BBTOOLS_DIR="/mnt/c/releases/bbmap"
+    WEBSITE_DIR="/mnt/c/playground/Chloe/bbmap_website"
+    GH_CLI="/mnt/c/Program Files/GitHub CLI/gh.exe"
+else
+    # Git Bash paths
+    BBTOOLS_DIR="/c/releases/bbmap"
+    WEBSITE_DIR="/c/playground/Chloe/bbmap_website"
+    GH_CLI="/c/Program Files/GitHub CLI/gh.exe"
+fi
 
 # CRITICAL: Remove dev-only packages that should NEVER be deployed
 FORBIDDEN_DIR="$BBTOOLS_DIR/current/barcode/prob"
