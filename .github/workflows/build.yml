@@ -20,10 +20,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     
-    - name: Set up JDK 8
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        java-version: '8'
+        java-version: '17'
         distribution: 'temurin'
     
     - name: Install Eclipse Compiler (ecj)
@@ -40,20 +40,33 @@ jobs:
       run: |
         cd BBTools
         echo "Compiling BBTools with Eclipse Compiler..."
+        echo "Using Java 17+ to run compiler, but targeting Java 7 bytecode..."
         
         # Find all Java files in all subdirectories
         find current -name "*.java" > source_files.txt
         
+        # Count files
+        FILE_COUNT=$(wc -l < source_files.txt)
+        echo "Found $FILE_COUNT Java source files to compile"
+        
         # Compile with ecj
-        # Note: Eclipse compiler is MUCH faster than javac for large projects
-        # Including --add-modules for incubator.vector support
+        # - Run compiler with Java 17 (for incubator.vector)
+        # - Target Java 7 bytecode output (-7)
+        # - Eclipse compiler is MUCH faster than javac for large projects
         java --add-modules jdk.incubator.vector \
           -jar ../ecj-4.29.jar \
-          -8 \
+          -7 \
           -nowarn \
+          -proceedOnError \
           -cp ".:current:current/*:current/*/*" \
           @source_files.txt \
           -d compiled_classes
+          
+        # Check if compilation produced output
+        if [ ! -d compiled_classes ] || [ -z "$(ls -A compiled_classes)" ]; then
+          echo "ERROR: No class files were generated!"
+          exit 1
+        fi
           
     - name: Verify compilation
       run: |
