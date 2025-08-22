@@ -132,6 +132,9 @@ jobs:
       run: |
         tar -xzf BBTools_compiled.tar.gz
         
+        # Make shell scripts executable
+        chmod +x *.sh
+        
         # Test that BBDuk runs
         echo "Testing BBDuk..."
         echo ">test" > test.fa
