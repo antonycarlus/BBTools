@@ -83,7 +83,7 @@ jobs:
         tar -czf ../BBTools_compiled.tar.gz .
         
     - name: Upload compiled artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: BBTools-compiled
         path: BBTools_compiled.tar.gz
@@ -91,7 +91,7 @@ jobs:
         
     - name: Upload class files
       if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: class-files
         path: BBTools/current/**/*.class
@@ -103,7 +103,7 @@ jobs:
     
     steps:
     - name: Download compiled artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: BBTools-compiled
         
