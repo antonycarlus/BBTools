@@ -51,7 +51,7 @@ jobs:
           -jar ../ecj-4.29.jar \
           -8 \
           -nowarn \
-          -cp ".:current/*:current/*/*:resources" \
+          -cp ".:current:current/*:current/*/*" \
           @source_files.txt \
           -d compiled_classes
           
