@@ -41,15 +41,17 @@ jobs:
         cd BBTools
         echo "Compiling BBTools with Eclipse Compiler..."
         
-        # Find all Java files
+        # Find all Java files in all subdirectories
         find current -name "*.java" > source_files.txt
         
         # Compile with ecj
         # Note: Eclipse compiler is MUCH faster than javac for large projects
-        java -jar ../ecj-4.29.jar \
+        # Including --add-modules for incubator.vector support
+        java --add-modules jdk.incubator.vector \
+          -jar ../ecj-4.29.jar \
           -8 \
           -nowarn \
-          -cp ".:current:resources" \
+          -cp ".:current/*:current/*/*:resources" \
           @source_files.txt \
           -d compiled_classes
           
